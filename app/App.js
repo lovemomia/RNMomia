@@ -38,8 +38,21 @@ class RNMomia extends Component {
 
   }
 
+  getMoviesFromApiAsync() {
+    return fetch('http://facebook.github.io/react-native/movies.json')
+      .then((response) => response.json())
+      .then((responseJson) => {
+        console.log(responseJson);
+        return responseJson.movies;
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
   render() {
 
+    this.getMoviesFromApiAsync();
     return (
       <TabNavigator tabBarStyle={styles.tab} hidesTabTouch={true}>
         <TabNavigator.Item
