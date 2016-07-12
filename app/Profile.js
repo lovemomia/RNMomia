@@ -1,10 +1,5 @@
-/**
- * 问答页面
- * 
- */
-
- let React = require('react');
- let ReactNative = require('react-native');
+let React = require('react');
+let ReactNative = require('react-native');
 
  var {
  	AppRegistry,
@@ -13,7 +8,7 @@
  	Text
  } = ReactNative;
 
- var WendaComponent = React.createClass({
+ var MineComponent = React.createClass({
 
  	getInitialState: function() {
  		return {
@@ -24,11 +19,11 @@
 
  		return (
  			<View style={{flex: 1,alignItems: 'center',justifyContent: 'center'}} >
- 				<Text> Hello,Wenda</Text>
+ 				<Text> Hello,Mine</Text>
  			</View>
  		);
  	},
 
  });
 
- module.exports = WendaComponent;
+ module.exports = MineComponent;

@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import TabNavigator from 'react-native-tab-navigator';
 import {
@@ -14,5 +8,5 @@ import {
   Image
 } from 'react-native';
 
-let Home = require('./app/Home.js');
+let Home = require('./app/App.js');
 AppRegistry.registerComponent('RNMomia', () => Home);
